@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
 const fs = require("fs");
 const path = require('path');
 const inquirer = require('inquirer');
@@ -54,8 +54,8 @@ const promptUser = () =>
     }
 ]);
 
-const generateMarkdown = (data) =>
-`# ${data.title}      
+const generateMarkdown = (data) => {
+return `# ${data.title}      
 
 ## Description
 
@@ -96,12 +96,14 @@ My GitHub profile is github.com/${data.username} should you want to get into con
 
 Feel free to email me at ${data.email} if you have any questions regarding the project.
 
-`;
+`;}
 
 promptUser()
-  .then((data) => fs.writeFile('readme.md', data))
-  .then(() => console.log('Successfully wrote to readme.md'))
-  .catch((err) => console.error(err));
+  .then((data) => fs.writeFile('readme.md', generateMarkdown(data), (err) => {
+    if (err) throw err;
+  }))
+  .then(() => console.log('Successfully created your readme.md!!'))
+  // .catch((err) => console.error(err));
 
 
 
