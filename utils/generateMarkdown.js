@@ -30,7 +30,7 @@ ${generateBadge(data)}
 ${data.description}
 
 ## Table of Contents
-
+---
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
@@ -55,7 +55,7 @@ ${data.usage}
 ---
 <a name="#license"></a>
 
-This project is licensed using the ${data.license} license.
+The following license was used in this project: ${data.license}.
 
 ## Credits 
 ---

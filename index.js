@@ -5,8 +5,8 @@ const inquirer = require('inquirer');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // // array of questions for user
-const promptUser = () => 
-    inquirer.prompt([
+const promptUser = () =>
+  inquirer.prompt([
     {
       type: 'input',
       name: 'title',
@@ -22,7 +22,7 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'description',
-      message: 'Please add a description to your project',
+      message: 'Please add a description to your project: ',
       validate: function (data) {
         if (data.length < 1) {
           return console.log("Please enter a valid description for your project");
@@ -34,33 +34,33 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'installation',
-      message: 'Please add installation instructions if needed',
+      message: 'Please add installation instructions if needed: ',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'Please add usage instructions if needed',
+      message: 'Please add usage instructions if needed:',
     },
     {
       type: 'checkbox',
       message: 'Which license have you used?',
       name: 'license',
-      choices: ["GNU GPL v3", "Apache 2.0", "MIT", "The Unlicensed"],
+      choices: ["GNU GPL v3", "Apache 2.0", "MIT", "The Unlicensed", "No license used"],
     },
     {
       type: 'input',
       name: 'credits',
-      message: 'Please add list of contributors and collaborators if any',
+      message: 'Please add list of contributors and collaborators if any: ',
     },
     {
       type: 'input',
       name: 'tests',
-      message: 'Please add test information if any',
+      message: 'Please add test information if any: ',
     },
     {
       type: 'input',
       name: 'username',
-      message: 'What is your Github username?',
+      message: 'What is your Github username? ',
       validate: function (data) {
         if (data.length < 1) {
           return console.log("Please enter a valid Github username");
@@ -72,7 +72,7 @@ const promptUser = () =>
     {
       type: 'input',
       name: 'email',
-      message: 'What is your email address?',
+      message: 'What is your email address? ',
       validate: function (data) {
         if (!data.includes("@")) {
           return console.log("Please enter a valid email address");
@@ -81,7 +81,7 @@ const promptUser = () =>
         }
       }
     }
-]);
+  ]);
 
 //--------------------------------------------------------------------------------------------------
 promptUser()
@@ -92,4 +92,3 @@ promptUser()
   //------------------------------------------------------------------------------------------------
 
 
-  
