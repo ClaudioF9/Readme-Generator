@@ -4,12 +4,11 @@
 
 
 ## Description
----
 
 This project is part of my front-end web development bootcamp. The project entails creating a Readme generator to easily and quickly create a Readme.md file for the user.
 
 ## Table of Contents
----
+
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [License](#license)
@@ -18,7 +17,7 @@ This project is part of my front-end web development bootcamp. The project entai
 5. [Questions](#questions)
 
 ## Installation 
----
+
 <a name="#installation"></a>
 
 
@@ -29,31 +28,31 @@ For more information on how to install nodeJS please follow the link provided: h
 For more information on how to install Inquirer please follow the link provided: https://www.npmjs.com/package/inquirer
 
 ## Usage 
----
+
 <a name="#usage"></a>
 
 Once everything is installed open terminal in VS Code and type "node index.js" follow the prompts and once complete a Readme.md file will be generated.
 
 ## License 
----
+
 <a name="#license"></a>
 
 The following license was used in this project: No license used.
 
 ## Credits 
----
+
 <a name="#contributing"></a>
 
 There were no collaborators for this project.
 
 ## Tests 
----
+
 <a name="#tests"></a>
 
 No tests were done.
 
 ## Questions 
----
+
 <a name="#questions"></a>
 
 My GitHub profile is github.com/ClaudioF9 should you want to get into contact or view my other projects.
